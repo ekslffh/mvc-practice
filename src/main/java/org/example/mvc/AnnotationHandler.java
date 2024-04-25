@@ -14,6 +14,7 @@ public class AnnotationHandler {
         this.targetMethod = targetMethod;
     }
 
+    // 현재 핸들러의 targetMethod를 실행ㅇ한다.
     public String handle(HttpServletRequest request, HttpServletResponse response) throws Exception {
         Constructor<?> declaredConstructor = clazz.getDeclaredConstructor();
         Object handler = declaredConstructor.newInstance();

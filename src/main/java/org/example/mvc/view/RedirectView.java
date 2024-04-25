@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
+// 리다익트 시키는 뷰
 public class RedirectView implements View {
     public static final String DEFAULT_REDIRECT_PREFIX = "redirect:";
     private final String name;

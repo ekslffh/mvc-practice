@@ -5,7 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.TYPE})
-@Retention(RetentionPolicy.RUNTIME)
+// Controller어노테이션을 통해서도 핸들러로 등록될 수 있또록
+@Target({ElementType.TYPE}) // 클래스에 붙인다는 의미
+@Retention(RetentionPolicy.RUNTIME) // 실행되는 동안
 public @interface Controller {
 }

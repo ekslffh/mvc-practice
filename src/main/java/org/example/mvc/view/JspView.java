@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
+// forward시키는 Jsp View
 public class JspView implements View {
     private final String name;
 
